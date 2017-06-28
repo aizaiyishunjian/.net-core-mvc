@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>第1/2章 .net core mvc 与 .net mvc的区别</title>
+</head>
+<body>
+<div id="wmd-preview" class="wmd-preview"><div class="md-section-divider"></div><div class="md-section-divider"></div><h1 data-anchor-id="zknh" id="第12章-net-core-mvc-与-net-mvc的区别">第1/2章 .net core mvc 与 .net mvc的区别</h1><div class="md-section-divider"></div><h1 data-anchor-id="64ks" id="1-粗略浏览了pro-aspnet-core-mvc-6th-edition-apress2016前两章内容">1. 粗略浏览了Pro ASP.NET Core MVC, 6th Edition-Apress(2016)前两章内容</h1><p data-anchor-id="l5gh">.net core mvc 与.net mvc区别</p><hr><ul data-anchor-id="ss0m">
+<li><p>.net mvc程序的配置一般从web.conf找数据库连接字符串、日志配置、web其他配置等;</p></li>
+<li><p>在.net core mvc中Startup.cs和appsettings.json是我们查看程序的两个入口。appsettings.json负责配置像字符串连接、日志、权限校验等信息;</p></li>
+<li><p>Startup.cs的构造函数负责加载appsettings.json配置文件的配置;</p></li>
+<li><p>ConfigureServices方法负责将需要进行依赖注入的服务加入DI配置;</p></li>
+<li><p>Configure负责向HttpRequest管道添加中间件;</p></li>
+</ul><div class="md-section-divider"></div><h1 data-anchor-id="i9wb" id="2-vs2017的15大新特性">2. <a href="http://www.cnblogs.com/Leo_wl/p/6581647.html" target="_blank">VS2017的15大新特性</a></h1><div class="md-section-divider"></div><h1 data-anchor-id="304b" id="3-问题印象vs2017支持调试状态下编辑但是没找到怎么设置的">3. 问题：印象VS2017支持调试状态下编辑，但是没找到怎么设置的</h1></div>
+</body>
+</html>
