@@ -5,4 +5,5 @@
 * [第1/2章 .net mvc与.net core mvc对比](di-1-2-zhang-net-mvc-4e0e-net-core-mvc-dui-bi.md)
 * [第3/4章 MVC模式及C\#新特性](di-3-4-zhang-nei-rong.md)
 * [第5章 Razor视图引擎](di-5-zhang-razor-shi-tu-yin-qing.md)
+* [第6章 Visual Studio](di-6-zhang-visual-studio.md)
 
