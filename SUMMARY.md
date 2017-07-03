@@ -6,4 +6,5 @@
 * [第3/4章 MVC模式及C\#新特性](di-3-4-zhang-nei-rong.md)
 * [第5章 Razor视图引擎](di-5-zhang-razor-shi-tu-yin-qing.md)
 * [第6章 Visual Studio](di-6-zhang-visual-studio.md)
+* [第14章 配置应用程序](di-14-zhang-pei-zhi-ying-yong-cheng-xu.md)
 
