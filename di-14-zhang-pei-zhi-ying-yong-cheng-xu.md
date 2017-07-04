@@ -36,7 +36,7 @@ public class ContentMiddleware {
 }
 ```
 
-![](file:///C:\Users\w4800\AppData\Roaming\Tencent\Users\1486753326\QQ\WinTemp\RichOle\KHS}[OGILY`G9{Y47WYT4GN.png)
+![](http://pic.yupoo.com/aizaiyishunjian/GznRKcaH/medium.jpg)
 
 * Short-Curcuiting Middleware
 
@@ -57,7 +57,7 @@ public class ShortCircuitMiddleware {
 }
 ```
 
-![](file:///C:\Users\w4800\AppData\Roaming\Tencent\Users\1486753326\QQ\WinTemp\RichOle\C11NS6%29}@}YBOCLY]E5CR[V.png)
+![](http://pic.yupoo.com/aizaiyishunjian/GznRKqSa/medium.jpg)
 
 * Request-Edting MiddleWare
 
@@ -75,7 +75,7 @@ public class BrowserTypeMiddleware {
 }
 ```
 
-![](file:///C:\Users\w4800\AppData\Roaming\Tencent\Users\1486753326\QQ\WinTemp\RichOle\HG_9MV0}J200I5%280`CDKD1Z.png)
+![](http://pic.yupoo.com/aizaiyishunjian/GznRKiAb/medium.jpg)
 
 * Response-Edting MiddleWare
 
@@ -98,7 +98,5 @@ public class ErrorMiddleware {
 }
 ```
 
-
-
-![](file:///C:\Users\w4800\AppData\Roaming\Tencent\Users\1486753326\QQ\WinTemp\RichOle\G~EG%29EL9%28AQG4TSQ4DNMPS4.png)
+![](http://pic.yupoo.com/aizaiyishunjian/GznRKn0g/medium.jpg)
 
