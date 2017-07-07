@@ -44,5 +44,92 @@ public void Configure(IApplicationBuilder app) {
 }
 ```
 
+## 4. 创建数据库
+
+> Add-Migration Initial
+>
+> Update-Database
+
+## 5. Identity 服务使用
+
+* UserManage&lt;TUser&gt;：用户管理，用户信息查询；
+* IPasswordValidator&lt;TUser&gt;：密码验证策略
+
+> ```
+> //内置验证
+> services.AddIdentity<AppUser, IdentityRole>(opts => {
+>     opts.Password.RequiredLength = 6;
+>     opts.Password.RequireNonAlphanumeric = false;
+>     opts.Password.RequireLowercase = false;
+>     opts.Password.RequireUppercase = false;
+>     opts.Password.RequireDigit = false;
+> }).AddEntityFrameworkStores<AppIdentityDbContext>();
+> ```
+
+> ```
+> //验证接口
+> public interface IPasswordValidator<TUser> where TUser : class {
+>     Task<IdentityResult> ValidateAsync(UserManager<TUser> manager,
+>     TUser user, string password);
+> }
+> ```
+
+> ```
+> //配置自定义验证
+> services.AddTransient<IPasswordValidator<AppUser>,CustomPasswordValidator>();
+> ```
+
+* IUserValidator&lt;IUser&gt;：用户验证策略
+
+> ```
+> //内置验证
+> opts.User.RequireUniqueEmail = true;
+> opts.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyz";
+> ```
+
+> ```
+> //验证接口
+> public interface IUserValidator<TUser> where TUser : class {
+>     Task<IdentityResult> ValidateAsync(UserManager<TUser> manager, TUser user);
+> }
+> ```
+
+> ```
+> 配置自定义验证
+> services.AddTransient<IUserValidator<AppUser>, CustomUserValidator>();
+> ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
