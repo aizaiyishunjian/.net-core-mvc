@@ -9,4 +9,5 @@
 * [第14章 配置应用程序](di-14-zhang-pei-zhi-ying-yong-cheng-xu.md)
 * [第18章 依赖注入](di-18-zhang-yi-lai-zhu-ru.md)
 * [第28章 Identity初步](di-er-shi-ba-zhang-identity-chu-bu.md)
+* [第29章 应用Asp.Net Core Identity](di-29-zhang-ying-yong-asp-net-core-identity.md)
 
