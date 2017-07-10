@@ -84,6 +84,8 @@ await signInManager.PasswordSignInAsync(user, details.Password, false, false);
 
 解决管理员默认创建的问题
 
+* appsetting.json增加管理员用户配置
+
 ```
 //appsettings.json File
 {
@@ -100,6 +102,7 @@ await signInManager.PasswordSignInAsync(user, details.Password, false, false);
         }
     }
 }
+
 ```
 
 ```
@@ -111,7 +114,7 @@ public class AppIdentityDbContext : IdentityDbContext<AppUser> {
     IConfiguration configuration) {
         UserManager<AppUser> userManager = serviceProvider.GetRequiredService<UserManager<AppUser>>();
         RoleManager<IdentityRole> roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-        
+
         string username = configuration["Data:AdminUser:Name"];
         string email = configuration["Data:AdminUser:Email"];
         string password = configuration["Data:AdminUser:Password"];
@@ -145,24 +148,6 @@ public void Configure(IApplicationBuilder app) {
     Configuration).Wait();
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
