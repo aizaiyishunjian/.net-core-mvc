@@ -34,8 +34,6 @@ services.AddIdentity<AppUser, IdentityRole>(opts => {
 * ReturnURL:用户请求被限制访问的地址时，会被重定向到登录地址，登录后需要跳转到之前的地址。
 * ValidateAntiForgeryToken:跨站脚本攻击
 
-
-
 ## 4. 用户认证
 
 ```
@@ -60,6 +58,42 @@ string returnUrl) {
     }
 }
 ```
+
+* 首先，查询用户
+
+```
+AppUser user = await userManager.FindByEmailAsync(details.Email);
+```
+
+* 然后，认证用户
+
+```
+await signInManager.SignOutAsync();
+Microsoft.AspNetCore.Identity.SignInResult result =
+await signInManager.PasswordSignInAsync(user, details.Password, false, false);
+```
+
+`SignOutAsync`用于清除用户现存的session信息；PasswordSignInAsync执行实际认证。作为认证的过程，Identity在响应里增加了Cookie信息，随后浏览器的请求都会包含这部分cookie信息。基于Identity使用时，Cookie是自动处理的，我们可以不用关注。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
