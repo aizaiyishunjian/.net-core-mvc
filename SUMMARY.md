@@ -10,4 +10,5 @@
 * [第18章 依赖注入](di-18-zhang-yi-lai-zhu-ru.md)
 * [第28章 Identity初步](di-er-shi-ba-zhang-identity-chu-bu.md)
 * [第29章 应用Asp.Net Core Identity](di-29-zhang-ying-yong-asp-net-core-identity.md)
+* [第30章 Identity高级应用](di-30-zhang-identity-gao-ji-ying-yong.md)
 
