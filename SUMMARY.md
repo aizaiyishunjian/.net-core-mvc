@@ -11,4 +11,5 @@
 * [第28章 Identity初步](di-er-shi-ba-zhang-identity-chu-bu.md)
 * [第29章 应用Asp.Net Core Identity](di-29-zhang-ying-yong-asp-net-core-identity.md)
 * [第30章 Identity高级应用](di-30-zhang-identity-gao-ji-ying-yong.md)
+* [个人博客站想法](ge-ren-bo-ke-zhan-xiang-fa.md)
 
