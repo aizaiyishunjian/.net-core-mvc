@@ -12,4 +12,5 @@
 * [第29章 应用Asp.Net Core Identity](di-29-zhang-ying-yong-asp-net-core-identity.md)
 * [第30章 Identity高级应用](di-30-zhang-identity-gao-ji-ying-yong.md)
 * [个人博客站想法](ge-ren-bo-ke-zhan-xiang-fa.md)
+* [第23章 TagHelpers](di-23-zhang-taghelpers.md)
 
