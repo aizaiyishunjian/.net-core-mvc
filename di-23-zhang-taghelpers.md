@@ -59,21 +59,23 @@ TagHelper的类名是要转换的HTML元素名后缀TagHelper,比如这里的But
 
 * **TagHelperContext**
 
-1. AllAttributes:HTML元素的只读属性集合
-2. Items:HTML元素的TagHelpers集合
-3. UniqueId:HTML元素的唯一标识
+* AllAttributes:HTML元素的只读属性集合
+
+* Items:HTML元素的TagHelpers集合
+* UniqueId:HTML元素的唯一标识
 
 * **TagHelperOutput**
 
-1. TagName
-2. Attributes
-3. Content
-4. PreElement
-5. PostElement
-6. PreContent
-7. PostContent
-8. TagMode
-9. SupressOutput\(\)
+* TagName
+
+* Attributes
+* Content
+* PreElement
+* PostElement
+* PreContent
+* PostContent
+* TagMode
+* SupressOutput\(\)
 
 ### **注册TagHelper**
 
@@ -191,25 +193,25 @@ PreElement和PostElement
 
 PreContent和PostContent
 
+#### 抑制内容输出
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
+[HtmlTargetElement(Attributes = "show-for-action")]
+public class SelectiveTagHelper : TagHelper {
+    public string ShowForAction { get; set; }
+    [ViewContext]
+    [HtmlAttributeNotBound]
+    public ViewContext ViewContext { get; set; }
+    public override void Process(TagHelperContext context,
+    TagHelperOutput output) {
+        if (!ViewContext.RouteData.Values["action"].ToString()
+        .Equals(ShowForAction, StringComparison.OrdinalIgnoreCase)) {
+            //通过调用SuppressOutput可以组织元素内容输出。
+            output.SuppressOutput();
+        }
+    }
+}
+```
 
 
 
