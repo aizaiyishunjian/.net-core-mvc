@@ -29,7 +29,7 @@ TagHelpers则迎合了HTML元素的自然特性，更加容易理解。
 
 ## 3. 理解TagHelpers
 
-* 实现目标
+* **实现目标**
 
 ```
 <button type="submit" bs-button-color="danger">Add</button>
@@ -41,7 +41,7 @@ TagHelpers则迎合了HTML元素的自然特性，更加容易理解。
 <button type="submit" class="btn btn-danger">Add</button>
 ```
 
-* 定义TagHelpers类
+* **定义TagHelpers类**
 
 ```
 namespace Cities.Infrastructure.TagHelpers {
@@ -59,7 +59,7 @@ TagHelper的类名是要转换的HTML元素名后缀TagHelper,比如这里的But
 
 **TagHelperContext**
 
-1.  AllAttributes:HTML元素的只读属性集合
+1. AllAttributes:HTML元素的只读属性集合
 2. Items:HTML元素的TagHelpers集合
 3. UniqueId:HTML元素的唯一标识
 
@@ -75,11 +75,7 @@ TagHelper的类名是要转换的HTML元素名后缀TagHelper,比如这里的But
 8. TagMode
 9. SupressOutput\(\)
 
-
-
-
-
-
+* **注册TagHelper**
 
 
 
