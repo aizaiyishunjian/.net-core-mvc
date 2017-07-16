@@ -110,11 +110,7 @@ asp-append-version="true">
 
 ## 9. ImageTagHelper
 
-
-
-
-
-
+* asp-append-version
 
 
 
